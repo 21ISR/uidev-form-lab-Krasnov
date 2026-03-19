@@ -1,12 +1,71 @@
-body{
+:root{
+    --bgc: rgb(171, 189, 201);
+    --mainc: linear-gradient(0.4turn, red, black)
+}
+
+body {
+    display: flex;
     font-family: Poppins, Arial, sans-serif;
     font-size: 14px;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: rgb(237, 245, 253);
 }
 
-main{
+main {
+    width: 480px;
+    height: 600px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    background: var(--mainc);
+}
+
+.divider {
+    color: var(--bgc);
+    text-transform: uppercase;
     display: flex;
-    flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 0px 20px 
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    width: 100px;
+    background-color: rgb(171, 189, 201);
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+.icon {
+    display: flex;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    background-color: rgb(237, 242, 245);
+    justify-content: center;
+    align-items: center;
+    border: var(--bgc) solid 2px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    gap: 3%;
+}
+
+.registration{
+    justify-self: center;
 }
