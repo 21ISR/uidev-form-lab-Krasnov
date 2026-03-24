@@ -1,6 +1,6 @@
 :root{
-    --bgc: rgb(171, 189, 201);
-    --mainc: linear-gradient(0.4turn, red, black)
+    --bgc: #c3cfe2;
+    --mainc: linear-gradient(0.4turn, #667eea, #764ba2)
 }
 
 body {
@@ -11,18 +11,28 @@ body {
     align-items: center;
     min-height: 100vh;
     min-width: 100vh;
-    background-color: rgb(237, 245, 253);
+    background: linear-gradient(0.4turn, #fff, #c3cfe2);
 }
 
 main {
     width: 480px;
     height: 600px;
-    border-radius: 40px;
+    border-radius: 20px;
     background-color: rgb(255, 255, 255);
 }
 
 header{
     background: var(--mainc);
+    color: #fff;
+    text-justify: center;
+    text-align: center;
+    padding: 20px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+header h1{
+    margin-bottom: 20px;
 }
 
 .divider {
