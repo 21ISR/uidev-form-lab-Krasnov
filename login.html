@@ -20,15 +20,21 @@
             <h1>Student login</h1>
             <h2>Acces your student account</h2>
         </header>
-        <section>
+        <section class="login">
             <form action="/api/login" method="get">
-                <label for="text">Login</label>
-                <input type="text">
-                <label for="password">Password</label>
-                <input type="password">
-                <input type="checkbox">
-                <label for="checkbox">Remember me</label>
-                <a href="#">Forgot passwod?</a>
+                <fieldset>
+                    <label for="text">Email or Student ID</label>
+                    <input type="text">
+                </fieldset>
+                <fieldset>
+                    <label for="password">Password</label>
+                    <input type="password">
+                </fieldset>
+                <fieldset id="RemMe">
+                    <input type="checkbox">
+                    <label for="checkbox">Remember me</label>
+                    <a href="#">Forgot passwod?</a>
+                </fieldset>
                 <button type="submit">Log In</button>
             </form>
         </section>
@@ -37,7 +43,7 @@
             <span>or</span>
             <span class="line"></span>
         </div>
-        <section>
+        <section id="regis">
             <div class="icons">
                 <div class="icon">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 488 512" height="200px"
