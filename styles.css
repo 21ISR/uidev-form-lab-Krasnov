@@ -1,0 +1,204 @@
+:root{
+    --bgc: #c3cfe2;
+    --mainc: linear-gradient(0.4turn, #667eea, #764ba2);
+    --hrefc: rgb(55, 149, 226);
+}
+
+body{
+    display: flex;
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    background: linear-gradient(0.4turn, #fff, #c3cfe2);
+}
+
+.loginmain{
+    width: 380px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.regismain{
+    width: 420px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background: var(--mainc);
+    color: #fff;
+    text-justify: center;
+    text-align: center;
+    padding: 20px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 0.8em;
+}
+header h1{
+    margin-bottom: 15px;
+    font-weight: 550;
+}
+header h2{
+    font-weight: 200;
+}
+
+.login {
+    flex-direction: column;
+    flex-grow: 1;
+    justify-items: center;
+    align-content: center;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    padding: 0px 40px;
+    padding-top: 40px;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+fieldset{
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+fieldset label{
+    font-weight: 600;
+    color: rgb(99, 104, 107);
+}
+fieldset input:not([type="checkbox"]){
+    display: flex;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: solid 2px var(--bgc);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+fieldset input:not([type="checkbox"]):focus{
+    border: solid 1px skyblue;
+    outline: solid 2px rgb(231, 248, 255);
+}
+
+select{
+    display: block;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-weight: 400;
+    background-color: rgb(226, 226, 226);
+}
+select:focus{
+    border: solid 1px skyblue;
+    outline: solid 2px rgb(231, 248, 255);
+}
+
+#RemMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+#RemMe label{
+    margin-right: auto;
+}
+#RemMe a{
+    text-decoration: none;
+    color: var(--hrefc);
+}
+#RemMe a:hover{
+    text-decoration: underline;
+}
+
+button[type="submit"]{
+    display: flex;
+    background: var(--mainc);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px 0px;
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+button[type="submit"]:hover{
+    transform: translate(0px, -5px);
+    box-shadow: 0px 8px 10px var(--bgc);
+}
+
+.divider {
+    color: var(--bgc);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 0px 20px;
+    margin-top: 20px
+}
+
+.line {
+    flex: 1;
+    height: 2px;
+    width: 100px;
+    background-color: rgb(171, 189, 201);
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+.icon {
+    display: flex;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    background-color: rgb(237, 242, 245);
+    justify-content: center;
+    align-items: center;
+    border: var(--bgc) solid 2px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    gap: 3%;
+}
+
+#regis{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.registration{
+    justify-self: center;
+}
+.registration a[href]{
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--hrefc);
+}
+.registration a[href]:hover{
+    text-decoration: underline;
+}
